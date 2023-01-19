@@ -1,1 +1,261 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+:root {
+    --purple500: #281154;
+    --purple300: #42035fb8;
+    --purple600: #2fcd29;
+    --red600: #c31c2ae0;
+    --body: #f9f6ff;
+    --max-width: 120rem;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html,
+    body {
+        font-family: "Roboto", sabs-serif;
+        font-weight: 200px;
+        line-height: 1.4;
+        scroll-behavior: smooth;
+    }
+
+    section {
+        scroll-margin: 5.0rem;
+    }
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        font-style: italic;
+        font-size: 1.5rem;
+    }
+    .container {
+        max-width: 120rem;
+        margin: 0 auto;
+    }
+    header {
+        background-color: rgba(208, 25, 229, 0.823);
+        position: sticky;
+        top:0;
+        z-index: 10rem;
+        box-shadow: .5rem .5rem .5rem;
+    }
+    nav {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        color:black;
+        padding: 2.0rem;
+        
+    }
+    nav h3 {
+        font-size: 3.0rem;
+    }
+
+    button {
+        padding: 1.0rem 1.5rem;
+        border: none;
+        transition: 0.2s ease-in-out;
+    }
+    button:hover {
+        transition: 0.2s ease-in-out;
+        opacity: 0.8;
+    }
+    nav ul {
+        display: flex;
+        gap: 2.0rem;
+    }
+    nav ul li  {
+        border-bottom: 2px solid transparent;
+        transition: 0.2s ease-in;
+    }
+    nav ul li:hover {
+        border-bottom: 2px solid black;
+        transition: 0.2s ease-in;
+    }
+    .hero-section {
+        background-image: url(bkgd.jpg.jpg);
+        height: 150vh;
+        display: grid;
+        color: rgb(211, 67, 67);
+        place-items: inherit;
+        text-align: center;
+    }
+    
+    .hero-section .container {
+        display: flex;
+        flex-direction: column;
+        gap: 5.0rem;
+        font-size: 1rem;
+        color: rgb(246, 91, 233);
+        font-weight: 300px;
+        
+    }
+     
+    .hero-section h1 {
+        font-size: 10rem;
+        color: white;
+        gap: 10rem;
+        position: relative;
+        place-items: initial;
+    }
+    .hero-section h3 {
+        font-size: 4.0rem;
+        color: white;
+    }
+    .hero-section h4 {
+        font-size: 1.5rem;
+        color: rgb(24, 181, 181);
+    }
+    .music-section {
+        padding-top: 150px;
+        background: var(--purple500);
+    }
+    .music-section .container {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        justify-content: top;
+        align-items: center;
+        color: white;
+        font-size: larger
+    }
+    .music-section h4{
+        text-align: center;
+    }
+
+    .ipad-iphone.jpg {
+        margin-top: -400px;
+        position: relative;
+        top: 40rem;
+        width: auto;
+        
+    }
+    .about-music {
+        padding-top: 5.0rem;
+        display: grid;
+        place-items: center;
+        gap: 5.0rem;
+        text-align: center;
+        margin-bottom: 5.0rem;
+        font-size: large;
+        font-style: italic;
+
+    }
+    .about-music h2 {
+        color: rgb(128, 13, 94);
+        gap: initial;
+        font-size: 4.0rem;
+    }
+    .primary-btn {
+        background-color: var(--red600);
+        color: white;
+        font-size: 1.0rem;
+        shape-margin: 1.0px;
+        
+    }
+    .secondary-btn {
+        background-color: var(--purple300);
+        color: white;
+        font-size: 1.0rem;
+        
+    }
+    .video-section {
+        background-image: url(bottomimg.jpg.jpg);
+        height: 50rem;
+        display: grid;
+        place-items: center;
+        color:white;
+        text-align:center;
+        font-size: large;
+        font-style: italic;
+        
+        
+    }
+    .video-section .container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-right: 400px;
+        place-content: left end;
+        
+        align-items: flex-end;
+        align-content:flex-start;
+        position: relative;
+    }
+    .video-section h3{
+       align-items: center;
+       text-align: justify;
+        color: #4798f5b8;
+        font-size: 3.0rem;
+        
+    }
+    .hero-section,.video-section {
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .gift-section {
+        display: flex;
+        justify-content: left;
+        margin: 1.0rem;
+        gap: 2.0rem;
+        margin: 10px;
+        padding: left;
+     }
+     .gift-section,.gift-card {
+      image-rendering:var(--max-width);
+      size: 20px;
+
+     }
+
+    .gift-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2.0rem;
+        font-style: italic;
+        size: 2.0rem;
+    }
+    .gift-content h3 {
+        font-size: 3.0rem;
+    }
+    .footer-upper {
+     background-color: rgba(90, 8, 88, 0.837);
+     padding: 2.0rem;
+    }
+    .footer-upper .container {
+        display: flex;
+        color: rgb(228, 221, 228);
+        justify-content: space-between;
+    }
+    .footer-upper h4 {
+        padding-bottom: 1.0rem;
+        border-bottom: .2rem solid rgb(254, 251, 251);
+        margin-bottom: 1.0rem;
+        font-weight: 10rem;
+
+    }
+    .footer-lower {
+        background-color: rgb(78, 5, 75);
+        padding: 2.0rem;
+        display: flex;
+        font-size:smaller;
+        justify-content: center;
+        color: white;
+    }
+    .footer-lower h5{
+        font-size: medium;
+        align-items: center;
+
+    }
+    .gift-section {
+        scroll-margin: 10rem;
+    }
+    
+    
+    
